@@ -1,0 +1,14 @@
+IFID:  !!! 
+Name: Lost Experience
+Byline: by Tom Keegasi
+HtmlByline: by <a href="mailto:tomkeegasi+dtrh@googlemail.com">Tom Keegasi</a>
+AuthorEmail: Tom Keegasi <tomkeegasi+leif@googlemail.com>
+Desc:  !!! 
+HtmlDesc:  !!! 
+Version: 0.1
+ReleaseDate: 2014-05-26
+FirstPublished: 2014
+Language: de-DE
+LicenseType: Freeware
+CopyingRules: Nominal cost only; compilations allowed
+PresentationProfile: Default
