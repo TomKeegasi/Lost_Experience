@@ -6,7 +6,7 @@ AuthorEmail: Tom Keegasi <tomkeegasi+leif@googlemail.com>
 Desc:  !!! 
 HtmlDesc:  !!! 
 Version: 0.1
-ReleaseDate: 2014-06-02
+ReleaseDate: 2014-06-14
 FirstPublished: 2014
 Language: de-DE
 LicenseType: Freeware

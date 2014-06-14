@@ -5,16 +5,20 @@ DebugToolbar:rebarWidth:I:505
 src win selrange:ReadMe.txt:S:0:0,0
 src win selrange:ReadMe.txt:S:1:0,0
 Plain Text-editor-prefs:syntax coloring enabled:I:1
+src win selrange:%tads%include\httpsrv.h:S:0:0,0
+src win selrange:%tads%include\httpsrv.h:S:1:0,0
 src win split:%tads%lib\adv3\adv3web.tl:S:0:0.000000
 src win split:%tads%lib\adv3\thing.t:S:0:0.000000
 build:ext resfile cnt:I:0
 build:installer in webpage:I:0
 src win edit mode:Lost_Experience.t:S:0:TADS 3
 line wrap:Game\GameInfo.txt:S:0:N
+src win edit mode:%tads%include\httpreq.h:S:0:TADS 3
 build:defaults set:I:1
 tool window mode switch:log.design:I:104
 watch win:pos:R:312,568,596,684
 watch win:vis:I:0
+src win edit mode:%tads%lib\webuires\cmdwin.js:S:0:Javascript
 HTML-editor-prefs:styles:S:0:,,0000ff,,
 HTML-editor-prefs:styles:S:1:,,8000ff,,
 HTML-editor-prefs:styles:S:2:,,ff0000,,
@@ -194,9 +198,10 @@ key bindings:Text Editor:S:58:Alt+? = Edit.SetNamedBookmark
 key bindings:Text Editor:S:59:Ctrl+8 = Edit.CommentRegion
 key bindings:Text Editor:S:60:F6 = Edit.FindDefinition
 build:c ops:I:0
+src win edit mode:%tads%include\httpsrv.h:S:0:TADS 3
 SearchToolbar:rebarNewLine:I:0
-log win pos::R:242,183,1219,614
-log win vis::I:0
+log win pos::R:234,153,1438,875
+log win vis::I:1
 MenuBar:rebarVis:I:1
 build:charmap:S:0:
 DocToolbar:rebarIndex:I:3
@@ -230,6 +235,7 @@ src win selrange:%tads%lib\adv3\thing.t:S:0:0,0
 src win selrange:%tads%lib\adv3\thing.t:S:1:282392,282398
 DocToolbar:rebarWidth:I:466
 DebugToolbar:rebarVis:I:1
+line wrap:Game\ReadMe.txt:S:0:N
 CSS-editor-prefs:syntax coloring enabled:I:1
 Command Script-editor-prefs:styles:S:0:,,000000,,
 Command Script-editor-prefs:styles:S:1:,,808080,,
@@ -240,6 +246,8 @@ XML-editor-prefs:syntax coloring enabled:I:1
 build:zipfile:S:0:Game\Lost_Experience.zip
 src win selrange:%tads%lib\tadsnet.t:S:0:0,0
 src win selrange:%tads%lib\tadsnet.t:S:1:0,0
+src win pos:%tads%lib\tadsnet.t:R:175,175,1154,692
+src win split:%tads%lib\webuires\cmdwin.htm:S:0:0.000000
 watch win:sep xpos 0:I:142
 watch win:sep xpos 1:I:142
 key bindings:Global:S:0:Ctrl+A = Edit.SelectAll
@@ -292,10 +300,13 @@ build:installer options:S:1:savext=Lost_Experience
 tool window mode switch:search.design:I:110
 search:start at top:I:0
 src win edit mode:%tads%lib\adv3\adv3web.tl:S:0:TADS 3 Library
+src win split:Game\License.txt:S:0:0.000000
 src win edit mode:%tads%lib\adv3\thing.t:S:0:TADS 3
 line wrap:Lost_Experience.t:S:0:N
 tool window mode switch:locals.design:I:104
+line wrap:%tads%include\httpreq.h:S:0:N
 EditToolbar:rebarNewLine:I:1
+line wrap:%tads%lib\webuires\cmdwin.js:S:0:N
 tool window mode switch:project.debug:I:110
 TADS 3 Library-editor-prefs:styles:S:0:,,,,
 src win edit mode:%tads%lib\tadsnet.t:S:0:TADS 3
@@ -331,12 +342,17 @@ TADS 3-editor-prefs:styles:S:21:,,000000,,
 Javascript-editor-prefs:syntax coloring enabled:I:1
 DocToolbar:rebarVis:I:1
 XML-editor-prefs:default style:S:0:,,0000ff,,
+line wrap:%tads%include\httpsrv.h:S:0:N
 build:installer in all pk:I:1
 tool window mode switch:scripts.debug:I:110
 auto-script:quit sequences:S:0:<nocase>[<]line[>]<space>*q(uit)?<space>*
 auto-script:quit sequences:S:1:<nocase>[<]line[>]<space>*y.*
+src win selrange:%tads%lib\webuires\cmdwin.htm:S:0:0,0
+src win selrange:%tads%lib\webuires\cmdwin.htm:S:1:0,0
 SearchToolbar:rebarIndex:I:4
 search:wrap:I:1
+src win selrange:Game\License.txt:S:0:0,0
+src win selrange:Game\License.txt:S:1:0,0
 auto-script:next-id:I:2
 SearchToolbar:rebarWidth:I:281
 build:webpage in all pk:I:1
@@ -360,20 +376,22 @@ locals win:vis:I:0
 build special file:readme:S:0:Game\ReadMe.txt
 main win max::I:1
 proj search:collapse spaces:I:0
+src win edit mode:%tads%lib\webuires\cmdwin.htm:S:0:HTML
 HTML-editor-prefs:syntax coloring enabled:I:1
 auto-script:enabled:I:0
 search:exact case:I:0
-mdi win list::S:0::help
+mdi win list::S:0::log
 mdi win list::S:1:Lost_Experience.t
 build:webpage dir:S:0:Game\web
 build:src in webpage:I:0
 main win pos::R:-8,22,1448,908
 build:srczipfile:S:0:Game\Lost_ExperienceSource.zip
 proj search:whole word:I:0
+src win edit mode:Game\License.txt:S:0:Plain Text
 Javascript-editor-prefs:default style:S:0:,,000000,,
 line wrap:%tads%lib\adv3\adv3web.tl:S:0:N
-help win pos::R:234,153,1438,875
-help win vis::I:1
+help win pos::R:317,258,1095,739
+help win vis::I:0
 build:ignore case:I:0
 line wrap:%tads%lib\adv3\thing.t:S:0:N
 src win split:Game\GameInfo.txt:S:0:0.000000
@@ -428,6 +446,7 @@ src win selrange:Game\GameInfo.txt:S:1:0,0
 extensions dir::S:0:C:\Users\CommanderSirow\Documents\TADS 3\Extensions
 DebugToolbar:rebarNewLine:I:0
 build:debug_image_file:S:0:Game\Lost_Experience.t3
+src win split:Game\ReadMe.txt:S:0:0.000000
 src win split:GameInfo.txt:S:0:0.000000
 search dlg:old searches:S:0:: Thing
 search dlg:old searches:S:1:wearable
@@ -439,6 +458,7 @@ editor:open libs readonly:I:0
 build special file title:readme:S:0:ReadMe
 find dialog:pos:R:783,109,1227,361
 TADS 3 Library-editor-prefs:syntax coloring enabled:I:1
+line wrap:%tads%lib\webuires\cmdwin.htm:S:0:N
 search dlg:old search opts:S:0:
 search dlg:old search opts:S:1:
 search dlg:old search opts:S:2:
@@ -446,6 +466,7 @@ search dlg:old search opts:S:3:
 search dlg:old search opts:S:4:
 Command Script-editor-prefs:default style:S:0:,,000000,,
 tool window mode switch:project.design:I:110
+line wrap:Game\License.txt:S:0:N
 CSS-editor-prefs:styles:S:0:,,0000ff,,
 CSS-editor-prefs:styles:S:1:,,800040,,
 CSS-editor-prefs:styles:S:2:,,0080ff,,
@@ -468,6 +489,7 @@ TADS 3-editor-prefs:syntax coloring enabled:I:1
 search:regex:I:0
 src win split:Lost_Experience.t:S:0:0.000000
 mdi tab order::S:0:1,0
+src win split:%tads%include\httpreq.h:S:0:0.000000
 XML-editor-prefs:styles:S:0:,,0000ff,,
 XML-editor-prefs:styles:S:1:,,8000ff,,
 XML-editor-prefs:styles:S:2:,,ff0000,,
@@ -585,8 +607,11 @@ EditToolbar:rebarVis:I:1
 tool window mode switch:search.debug:I:104
 key bindings:defaults loaded:I:1
 main win mdi max::I:1
+src win split:%tads%lib\webuires\cmdwin.js:S:0:0.000000
 auto-script:default quit sequences set:I:1
 tool window mode switch:scripts.design:I:110
+src win selrange:Game\ReadMe.txt:S:0:0,0
+src win selrange:Game\ReadMe.txt:S:1:0,0
 src win selrange:GameInfo.txt:S:0:0,0
 src win selrange:GameInfo.txt:S:1:0,0
 key bindings:Incremental Search:S:0:Ctrl+F = Edit.IncSearch.Next
@@ -605,6 +630,7 @@ src win split:ReadMe.txt:S:0:0.000000
 build:src in all pk:I:1
 auto-script:prune:I:1
 DocToolbar:rebarNewLine:I:0
+src win split:%tads%include\httpsrv.h:S:0:0.000000
 tool window mode switch:stack.design:I:104
 TADS 3 Library-editor-prefs:default style:S:0:,,,,
 MenuBar:rebarIndex:I:0
@@ -621,8 +647,11 @@ src win selrange:Lost_Experience.t:S:1:1827,1827
 project win:pos:R:2,150,225,719
 project win:vis:I:1
 src win pos:Lost_Experience.t:R:100,100,784,569
+src win edit mode:Game\ReadMe.txt:S:0:Plain Text
 src win edit mode:GameInfo.txt:S:0:Plain Text
 auto-script:dir:S:0:%tads%Scripts
+src win selrange:%tads%include\httpreq.h:S:0:0,0
+src win selrange:%tads%include\httpreq.h:S:1:0,0
 stack win pos::R:367,308,1180,767
 filesearch win pos::R:492,263,1305,722
 Javascript-editor-prefs:styles:S:0:,,000000,,
@@ -641,6 +670,8 @@ Javascript-editor-prefs:styles:S:12:,,ff00ff,,
 filesearch win vis::I:0
 stack win vis::I:0
 DebugToolbar:rebarIndex:I:2
+src win selrange:%tads%lib\webuires\cmdwin.js:S:0:0,0
+src win selrange:%tads%lib\webuires\cmdwin.js:S:1:42749,42595
 searchMode::I:1
 src win selrange:%tads%lib\adv3\objects.t:S:0:0,0
 src win selrange:%tads%lib\adv3\objects.t:S:1:215445,215438

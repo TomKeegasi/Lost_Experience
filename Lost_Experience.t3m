@@ -22,8 +22,10 @@
 -lib webui
 -source tadsnet
 -lib adv3/adv3web
+-lib webscript
+-lib websound
 -source Lost_Experience
 
 -res
 GameInfo.txt
-Game/webuires
+webuires
