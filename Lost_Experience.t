@@ -5,7 +5,7 @@
 
 
 versionInfo: GameID {
-    IFID                = ' !!! '
+    IFID                = '79CDE520-AEF6-4AC0-B851-BFB89B023BFB'
     name                = 'Lost Experience'
     byline              = 'by Tom Keegasi'
     htmlByline          = 'by <a href="mailto:tomkeegasi+dtrh@googlemail.com">Tom Keegasi</a>'
@@ -47,9 +47,10 @@ gameMain: GameMainDef {
 }
 
 
-pc: Actor {
+
+pc: Actor 
     location = office
-}
+;
 
 
 office: Room 'Büro' 'Büro' 
