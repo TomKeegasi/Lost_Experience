@@ -34,7 +34,7 @@ versionInfo: GameID {
 
 
 gameMain: GameMainDef {
-    initialPlayerChar = pc
+    initialPlayerChar = playerCharacter
 
     showIntro() {
         "!!!</br></br>";
@@ -48,7 +48,7 @@ gameMain: GameMainDef {
 
 
 
-pc: Actor 
+playerCharacter: Actor 
     location = office
 ;
 
@@ -57,54 +57,95 @@ office: Room 'Büro' 'Büro'
     "Büro"
 ;
 
-+Stuhl: Chair 'Stuhl' 'Stuhl'
++stuhl: Chair 'Stuhl' 'Stuhl'
     "Stuhl"
 ;
 
-+Steckdose: Fixture 'Steckdose' 'Steckdose'
++steckdose: Fixture 'Steckdose' 'Steckdose'
     "Steckdose"
 ;
 
-+Tuer: Fixture 'Tür' 'Tür'
++tuerOffice: Fixture 'Tür' 'Tür'
     "Tür"
 ;
 
-+Schreibtisch: Immovable 'Schreibtisch' 'Schreibtisch'
++schreibtisch: Immovable 'Schreibtisch' 'Schreibtisch'
     "Schreitisch"
 ;
 
-++Computer: Immovable 'Computer' 'Computer'
+++computer: Immovable 'Computer' 'Computer'
     "Computer"
 ;
 
-++Monitor: Immovable 'Monitor' 'Monitor'
+++monitor: Immovable 'Monitor' 'Monitor'
     "Monitor"
 ;
 
-++Tastatur: Immovable 'Tastatur' 'Tastatur'
+++tastatur: Immovable 'Tastatur' 'Tastatur'
     "Tastatur"
 ;
 
-++Maus: Immovable 'Maus' 'Maus'
+++maus: Immovable 'Maus' 'Maus'
     "Maus"
 ;
 
-++Tischlampe: Immovable 'Tischlampe' 'Tischlampe'
+++tischlampe: Immovable 'Tischlampe' 'Tischlampe'
     "Tischlampe"
 ;
 
-++Bilderrahmen: Decoration 'Bilderrahmen' 'Bilderrahmen'
-    "Bilderrahmen"
-;
-
-+++Bild: Component 'Bild' 'Bild'
+++bild: Thing 'Bild' 'Bild'
     "Bild"
 ;
 
-++Papierstapel: Decoration 'Papierstapel' 'Papierstapel'
+++papierstapel: Decoration 'Papierstapel' 'Papierstapel'
     "Papierstapel"
 ;
 
-+++Akten: Component 'Akten' 'Akten'
-    "Akten"
+
+/*
+ *
+ */
+
+wc: Room 'WC' 'WC' 
+    "WC"
+;
+
++portemonnaie: Thing, Container 'Portemonnaie' 'Portemonnaie'
+    "Portemonnaie"
+;
+
++toilette: Fixture 'Toilette' 'Toilette'
+    "Toilette"
+;
+
+++duftspender: Thing 'Duftspender' 'Duftspender'
+    "Duftspender"
+;
+
++spiegelschrank: Fixture, OpenableContainer 'Spiegel' 'Spiegel'
+    "Spiegel"
+;
+
++waschbecken: Fixture 'Waschbecken' 'Waschbecken'
+    "Waschbecken"
+;
+
+++wasserhahn: Fixture 'Wasserhahn' 'Wasserhahn'
+    "Wasserhahn"
+;
+    
++tuerWC: Fixture 'Tür' 'Tür'
+    "Tür"
+;
+
++schalter: Fixture 'Lichtschalter' 'Lichtschalter'
+    "Lichtschalter"
+;
+
++deckenlampe: Fixture 'Deckenlampe' 'Deckenlampe'
+    "Deckenlampe"
+;
+
++luftschacht: Fixture 'Luftschacht' 'Luftschacht'
+    "Luftschacht"
 ;
