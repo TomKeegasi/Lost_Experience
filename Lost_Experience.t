@@ -1,7 +1,7 @@
 #charset "iso-8859-1"
 
 #include <adv3.h>
-#include <de_de.h>
+#include <en_en.h>
 
 
 versionInfo: GameID {
@@ -14,7 +14,7 @@ versionInfo: GameID {
     desc                = ' !!! '
     htmlDesc            = ' !!! '
     firstPublished      = '2014'
-    languageCode        = 'de-DE'
+    languageCode        = 'en-EN'
     licenseType         = 'Freeware'
 
     showCredit() {
