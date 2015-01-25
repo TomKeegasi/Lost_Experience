@@ -1,7 +1,7 @@
 #charset "iso-8859-1"
 
-#include <adv3.h>
-#include <en_en.h>
+#include <tads.h>
+#include "advlite.h"
 
 
 versionInfo: GameID {
@@ -105,14 +105,71 @@ office: Room 'Büro' 'Büro'
 /*
  *
  */
+toilet: Room {
+	roomTitle	= 'Toilet'
+	vocab		= 'Toilet'
+	desc		= "{You/he} Toilet"
+}
 
-wc: Room 'WC' 'WC' 
-    "WC"
-;
++wallet: Thing, Container {
+	name			= '(small) brassy object'
+	vocab			= 'small brassy object'
+	desc			= "On the obverse is the head of King Freddie the Fat, and on the reverse is stamped ONE GROAT. "  
+	initSpecialDesc	= "A small brassy object lies on the ground in a dim corner of the cave. " 
+	initDesc 		= "It looks like it might be a coin of some sort. " 
+	dobjFor(Examine) { 
+		action() { 
+			inherited; 
+			changeName(); 
+		} 
+	} 
+	changeName() { 
+		name = 'small brass coin'; 
+		cmdDict.removeWord(self, 'object', &noun); 
+		initializeVocabWith('brass coin/groat*coins'); 
+	}  
+}
 
-+portemonnaie: Thing, Container 'Portemonnaie' 'Portemonnaie'
-    "Portemonnaie"
-;
+
+brassKey : Hidden, Key 'small brass key' 'brass key' @roundCave 
+  "It<<isBent ? ' looks slightly bent' : '\'s been straightened'>>. " 
+  isBent = true 
+; 
+
+rug : Immovable 'large rectangular chinese rug/pattern/leaves/dragons' 'Chinese rug' 
+   @roundCave 
+  "The rectangular rug is patterned in pastel colours, mainly turquoise round the 
+   edge and principally golds and browns within. The patterns consists mainly 
+   of leaves and dragons. " 
+  initSpecialDesc = "A Chinese rug covers the centre of the floor. " 
+  specialDesc = "The Chinese rug has been pulled over to one side of the cave. " 
+  cannotTakeMsg = 'You probably could roll the carpet up and drag it around, 
+    but you don\'t want to be encumbered with it. ' 
+  dobjFor(Pull) 
+  { 
+    action() 
+    { 
+      if(moved) 
+        "You can't pull the rug any further, it's already at the edge of the cave. "; 
+      else 
+      { 
+        "Pulling the rug over to the edge of the cave reveals a square hole in the floor. "; 
+        moved = true; 
+      } 
+    } 
+  } 
+  actionDobjLookUnder() 
+  { 
+    if(brassKey.discovered) 
+      "{You/he} find{s} nothing else under the rug. "; 
+    else 
+    { 
+      "Under the rug {you/he} find{s} a small brass key. "; 
+      brassKey.discover(); 
+      addToScore(1, 'finding the brass key '); 
+    } 
+  } 
+; 
 
 +toilette: Fixture 'Toilette' 'Toilette'
     "Toilette"

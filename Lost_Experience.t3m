@@ -1,20 +1,18 @@
 # TADS 3 makefile
 
 # Compiler options
--pre
 -D TADS_INCLUDE_NET
--D LANGUAGE=en_en
+-D LANGUAGE=english
 -D MESSAGESTYLE=neu
 -Fy obj
 -Fo obj
 -v
--w1
 
 # sources
 -lib system
 -lib webui
 -source tadsnet
--lib adv3/adv3web
+-lib adv3Lite/adv3LiteWeb
 -lib webscript
 -lib websound
 -source Lost_Experience
