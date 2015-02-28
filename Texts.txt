@@ -1,0 +1,103 @@
+black leather wallet (small black object)
+[container]
+	It's the wallet you found behind the toilet. Beeing made from black leather it appears to have been quite expensive.
+	<< !Opened ? You wonder whom it belongs. : Sadly there was no personal information inside. >>
+	
+porcelain toilet bowl
+[fixture, chair]
+	Just an ordinary porcelain toilet as it is found in most households since the 18th century.
+	Looking at all the water stains it has probably seen better days during its lifetime.
+	<< !Wallet ? As his eyes wander around the toilet you notice a small black object lying behind it. >>
+	
+toilet brush
+[thing]
+	<<!Taken ? The toilet brush is held by a small plastic receptacle that is mounted to the wall.>>
+	It looks more functional than decorative, just like the rest of the room.
+	Judging from the all the specks it has collected, it seems like the charwoman visits this place rather seldomly.
+	
+plastic receptacle on the wall
+[decoration]
+	The plastic receptacle is mounted to the wall in order to hold the toilet brush in place.
+	Apart from the toilet brush it is filled with what looks like rather dirty water.
+	
+mirror cabinet
+[fixture, openablecontainer]
+	<< !Open ? Whoever works at this place does not seem to care much for a clean workspace, as the mirror is covered with lots of water stains and other things.
+	A thin line in the middle of the mirror separates it into two parts. 
+	<< First ? 'Mirror, mirror on the wall, who is the fairest one of all?'
+	Urgh! Its definitely not him... >> :
+	A cabinet is mounted inside the wall and covered by the mirror. 
+	It is filled with quite a lot of medicine bottles, apart from a vial of Aspirin and some half empty Truxal bottles there is not much you recognize.
+	At the bottom of the cabinet lies a razor with some replacement blades, some shaving cream and a rather filthy comb filled with black hair.>>
+	
+medicine, bottles
+[decoration]
+	This is quite an impressive collection of various medications. 
+	Whomever this belongs certainly has a lot of poblems to attent to.
+
+aspirin
+[thing]
+	Oh my sweet, sweet ambrosia. Lukily I'm currently not in need of you.
+	Would not be useful for me there anyway.
+
+truxal
+[thing]
+	I can't remember the last time I saw those.
+	Judging from the number of half empty bottles, whoever works here is more persistant in taking them then I was.
+	
+razor
+[thing]
+	I'm no expert on this, but this razor looks like it should be used for shaving beards.
+	There is still some shaving cream left on the blade. Either someone was in a rush or is a bit sloppy.
+	
+razor blades
+[thing]
+	A few stacks of replacement blades for the razor. Looks sharp.
+	
+shaving cream
+[thing]
+	Nothing special about this shaving cream. It's definitely not the kind that I use though.
+	
+filthy comb
+[thing]
+	...
+
+sink
+[fixture]
+	...
+	
+faucet
+[fixture]
+	...
+	
+scent dispensers
+[thing]
+	...
+	
+door
+[door]
+	...
+	
+light switch
+[switch]
+	...
+	
+lamp
+[fixture]
+	...
+	
+ventilation
+[fixture]
+	...
+	
+(safe) key
+[key]
+	...
+	
+(access) chip card
+[thing]
+	...
+	
+money
+[Collective]
+	...
